@@ -2,6 +2,8 @@ import './App.css';
 import Home from './pages/home';
 import AboutMe from './pages/aboutme';
 import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
+import NavBar from './navbar';
+import StartSection from './startscreen';
 
 function App() {
   function docTitle(){
@@ -22,12 +24,8 @@ function App() {
       </header>
 
       <main>
-        <BrowserRouter>
-          <Routes>
-            <Route index element={<Home/>}/>
-            <Route path='/about' element={<AboutMe/>}/>
-          </Routes>
-        </BrowserRouter>
+        <NavBar/>
+        <StartSection/>
       </main>
     </div>
   );
