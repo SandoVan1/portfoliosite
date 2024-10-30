@@ -1,9 +1,7 @@
 import './App.css';
-import Home from './pages/home';
-import AboutMe from './pages/aboutme';
-import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
 import NavBar from './navbar';
 import StartSection from './startscreen';
+import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
 
 function App() {
   function docTitle(){
